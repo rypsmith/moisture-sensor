@@ -1,5 +1,5 @@
 let strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
-let brightness = 50
+let brightness = 25
 basic.forever(function () {
     if (pins.analogReadPin(AnalogPin.P2) < 35) {
         basic.showIcon(IconNames.Sad)
@@ -422,5 +422,4 @@ basic.forever(function () {
         strip.setBrightness(brightness)
         strip.show()
     }
-    strip.setBrightness(50)
 })
