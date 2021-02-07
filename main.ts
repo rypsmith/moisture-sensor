@@ -1,29 +1,29 @@
 let strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
 let brightness = 25
 basic.forever(function () {
-    if (pins.analogReadPin(AnalogPin.P2) < 35) {
-        basic.showIcon(IconNames.Sad)
+    if (pins.analogReadPin(AnalogPin.P2) < 630) {
+        basic.showIcon(IconNames.Skull)
         strip.clear()
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
         strip.setBrightness(brightness)
         strip.show()
-    } else if (pins.analogReadPin(AnalogPin.P2) < 70 && pins.analogReadPin(AnalogPin.P2) > 35) {
-        basic.showIcon(IconNames.Sad)
+    } else if (pins.analogReadPin(AnalogPin.P2) < 648 && pins.analogReadPin(AnalogPin.P2) > 636) {
+        basic.showIcon(IconNames.Skull)
         strip.clear()
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
         strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
         strip.setBrightness(brightness)
         strip.show()
-    } else if (pins.analogReadPin(AnalogPin.P2) < 105 && pins.analogReadPin(AnalogPin.P2) > 70) {
-        basic.showIcon(IconNames.Sad)
+    } else if (pins.analogReadPin(AnalogPin.P2) < 660 && pins.analogReadPin(AnalogPin.P2) > 648) {
+        basic.showIcon(IconNames.Skull)
         strip.clear()
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
         strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
         strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
         strip.setBrightness(brightness)
         strip.show()
-    } else if (pins.analogReadPin(AnalogPin.P2) < 140 && pins.analogReadPin(AnalogPin.P2) > 105) {
-        basic.showIcon(IconNames.Sad)
+    } else if (pins.analogReadPin(AnalogPin.P2) < 672 && pins.analogReadPin(AnalogPin.P2) > 660) {
+        basic.showIcon(IconNames.Skull)
         strip.clear()
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
         strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
@@ -31,8 +31,8 @@ basic.forever(function () {
         strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
         strip.setBrightness(brightness)
         strip.show()
-    } else if (pins.analogReadPin(AnalogPin.P2) < 175 && pins.analogReadPin(AnalogPin.P2) > 140) {
-        basic.showIcon(IconNames.Sad)
+    } else if (pins.analogReadPin(AnalogPin.P2) < 684 && pins.analogReadPin(AnalogPin.P2) > 672) {
+        basic.showIcon(IconNames.Skull)
         strip.clear()
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
         strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
@@ -41,8 +41,8 @@ basic.forever(function () {
         strip.setPixelColor(4, neopixel.colors(NeoPixelColors.Red))
         strip.setBrightness(brightness)
         strip.show()
-    } else if (pins.analogReadPin(AnalogPin.P2) < 210 && pins.analogReadPin(AnalogPin.P2) > 175) {
-        basic.showIcon(IconNames.Sad)
+    } else if (pins.analogReadPin(AnalogPin.P2) < 696 && pins.analogReadPin(AnalogPin.P2) > 684) {
+        basic.showIcon(IconNames.Skull)
         strip.clear()
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
         strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
@@ -52,8 +52,8 @@ basic.forever(function () {
         strip.setPixelColor(5, neopixel.colors(NeoPixelColors.Red))
         strip.setBrightness(brightness)
         strip.show()
-    } else if (pins.analogReadPin(AnalogPin.P2) < 245 && pins.analogReadPin(AnalogPin.P2) > 210) {
-        basic.showIcon(IconNames.Surprised)
+    } else if (pins.analogReadPin(AnalogPin.P2) < 696 && pins.analogReadPin(AnalogPin.P2) > 684) {
+        basic.showIcon(IconNames.Sad)
         strip.clear()
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
         strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
@@ -64,8 +64,8 @@ basic.forever(function () {
         strip.setPixelColor(6, neopixel.colors(NeoPixelColors.Yellow))
         strip.setBrightness(brightness)
         strip.show()
-    } else if (pins.analogReadPin(AnalogPin.P2) < 280 && pins.analogReadPin(AnalogPin.P2) > 245) {
-        basic.showIcon(IconNames.Surprised)
+    } else if (pins.analogReadPin(AnalogPin.P2) < 708 && pins.analogReadPin(AnalogPin.P2) > 696) {
+        basic.showIcon(IconNames.Sad)
         strip.clear()
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
         strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
@@ -77,8 +77,8 @@ basic.forever(function () {
         strip.setPixelColor(7, neopixel.colors(NeoPixelColors.Yellow))
         strip.setBrightness(brightness)
         strip.show()
-    } else if (pins.analogReadPin(AnalogPin.P2) < 315 && pins.analogReadPin(AnalogPin.P2) > 280) {
-        basic.showIcon(IconNames.Surprised)
+    } else if (pins.analogReadPin(AnalogPin.P2) < 720 && pins.analogReadPin(AnalogPin.P2) > 708) {
+        basic.showIcon(IconNames.Sad)
         strip.clear()
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
         strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
@@ -91,8 +91,8 @@ basic.forever(function () {
         strip.setPixelColor(8, neopixel.colors(NeoPixelColors.Yellow))
         strip.setBrightness(brightness)
         strip.show()
-    } else if (pins.analogReadPin(AnalogPin.P2) < 350 && pins.analogReadPin(AnalogPin.P2) > 315) {
-        basic.showIcon(IconNames.Surprised)
+    } else if (pins.analogReadPin(AnalogPin.P2) < 732 && pins.analogReadPin(AnalogPin.P2) > 720) {
+        basic.showIcon(IconNames.Sad)
         strip.clear()
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
         strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
@@ -106,8 +106,8 @@ basic.forever(function () {
         strip.setPixelColor(9, neopixel.colors(NeoPixelColors.Yellow))
         strip.setBrightness(brightness)
         strip.show()
-    } else if (pins.analogReadPin(AnalogPin.P2) < 385 && pins.analogReadPin(AnalogPin.P2) > 350) {
-        basic.showIcon(IconNames.Surprised)
+    } else if (pins.analogReadPin(AnalogPin.P2) < 744 && pins.analogReadPin(AnalogPin.P2) > 732) {
+        basic.showIcon(IconNames.Sad)
         strip.clear()
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
         strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
@@ -122,8 +122,8 @@ basic.forever(function () {
         strip.setPixelColor(10, neopixel.colors(NeoPixelColors.Yellow))
         strip.setBrightness(brightness)
         strip.show()
-    } else if (pins.analogReadPin(AnalogPin.P2) < 420 && pins.analogReadPin(AnalogPin.P2) > 385) {
-        basic.showIcon(IconNames.Surprised)
+    } else if (pins.analogReadPin(AnalogPin.P2) < 756 && pins.analogReadPin(AnalogPin.P2) > 744) {
+        basic.showIcon(IconNames.Sad)
         strip.clear()
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
         strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
@@ -139,7 +139,7 @@ basic.forever(function () {
         strip.setPixelColor(11, neopixel.colors(NeoPixelColors.Yellow))
         strip.setBrightness(brightness)
         strip.show()
-    } else if (pins.analogReadPin(AnalogPin.P2) < 455 && pins.analogReadPin(AnalogPin.P2) > 420) {
+    } else if (pins.analogReadPin(AnalogPin.P2) < 768 && pins.analogReadPin(AnalogPin.P2) > 756) {
         basic.showIcon(IconNames.Asleep)
         strip.clear()
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
@@ -157,7 +157,7 @@ basic.forever(function () {
         strip.setPixelColor(12, neopixel.colors(NeoPixelColors.Green))
         strip.setBrightness(brightness)
         strip.show()
-    } else if (pins.analogReadPin(AnalogPin.P2) < 490 && pins.analogReadPin(AnalogPin.P2) > 455) {
+    } else if (pins.analogReadPin(AnalogPin.P2) < 780 && pins.analogReadPin(AnalogPin.P2) > 768) {
         basic.showIcon(IconNames.Asleep)
         strip.clear()
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
@@ -176,7 +176,7 @@ basic.forever(function () {
         strip.setPixelColor(13, neopixel.colors(NeoPixelColors.Green))
         strip.setBrightness(brightness)
         strip.show()
-    } else if (pins.analogReadPin(AnalogPin.P2) < 525 && pins.analogReadPin(AnalogPin.P2) > 490) {
+    } else if (pins.analogReadPin(AnalogPin.P2) < 792 && pins.analogReadPin(AnalogPin.P2) > 780) {
         basic.showIcon(IconNames.Asleep)
         strip.clear()
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
@@ -196,7 +196,7 @@ basic.forever(function () {
         strip.setPixelColor(14, neopixel.colors(NeoPixelColors.Green))
         strip.setBrightness(brightness)
         strip.show()
-    } else if (pins.analogReadPin(AnalogPin.P2) < 560 && pins.analogReadPin(AnalogPin.P2) > 525) {
+    } else if (pins.analogReadPin(AnalogPin.P2) < 804 && pins.analogReadPin(AnalogPin.P2) > 792) {
         basic.showIcon(IconNames.Asleep)
         strip.clear()
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
@@ -217,7 +217,7 @@ basic.forever(function () {
         strip.setPixelColor(15, neopixel.colors(NeoPixelColors.Green))
         strip.setBrightness(brightness)
         strip.show()
-    } else if (pins.analogReadPin(AnalogPin.P2) < 595 && pins.analogReadPin(AnalogPin.P2) > 560) {
+    } else if (pins.analogReadPin(AnalogPin.P2) < 816 && pins.analogReadPin(AnalogPin.P2) > 804) {
         basic.showIcon(IconNames.Asleep)
         strip.clear()
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
@@ -239,7 +239,7 @@ basic.forever(function () {
         strip.setPixelColor(16, neopixel.colors(NeoPixelColors.Green))
         strip.setBrightness(brightness)
         strip.show()
-    } else if (pins.analogReadPin(AnalogPin.P2) < 630 && pins.analogReadPin(AnalogPin.P2) > 595) {
+    } else if (pins.analogReadPin(AnalogPin.P2) < 828 && pins.analogReadPin(AnalogPin.P2) > 816) {
         basic.showIcon(IconNames.Asleep)
         strip.clear()
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
@@ -262,7 +262,7 @@ basic.forever(function () {
         strip.setPixelColor(17, neopixel.colors(NeoPixelColors.Green))
         strip.setBrightness(brightness)
         strip.show()
-    } else if (pins.analogReadPin(AnalogPin.P2) < 665 && pins.analogReadPin(AnalogPin.P2) > 630) {
+    } else if (pins.analogReadPin(AnalogPin.P2) < 840 && pins.analogReadPin(AnalogPin.P2) > 828) {
         basic.showIcon(IconNames.Happy)
         strip.clear()
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
@@ -286,7 +286,7 @@ basic.forever(function () {
         strip.setPixelColor(18, neopixel.colors(NeoPixelColors.Blue))
         strip.setBrightness(brightness)
         strip.show()
-    } else if (pins.analogReadPin(AnalogPin.P2) < 700 && pins.analogReadPin(AnalogPin.P2) > 665) {
+    } else if (pins.analogReadPin(AnalogPin.P2) < 852 && pins.analogReadPin(AnalogPin.P2) > 840) {
         basic.showIcon(IconNames.Happy)
         strip.clear()
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
@@ -311,7 +311,7 @@ basic.forever(function () {
         strip.setPixelColor(19, neopixel.colors(NeoPixelColors.Blue))
         strip.setBrightness(brightness)
         strip.show()
-    } else if (pins.analogReadPin(AnalogPin.P2) < 735 && pins.analogReadPin(AnalogPin.P2) > 700) {
+    } else if (pins.analogReadPin(AnalogPin.P2) < 864 && pins.analogReadPin(AnalogPin.P2) > 852) {
         basic.showIcon(IconNames.Happy)
         strip.clear()
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
@@ -337,7 +337,7 @@ basic.forever(function () {
         strip.setPixelColor(20, neopixel.colors(NeoPixelColors.Blue))
         strip.setBrightness(brightness)
         strip.show()
-    } else if (pins.analogReadPin(AnalogPin.P2) < 770 && pins.analogReadPin(AnalogPin.P2) > 735) {
+    } else if (pins.analogReadPin(AnalogPin.P2) < 876 && pins.analogReadPin(AnalogPin.P2) > 864) {
         basic.showIcon(IconNames.Happy)
         strip.clear()
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
@@ -364,7 +364,7 @@ basic.forever(function () {
         strip.setPixelColor(21, neopixel.colors(NeoPixelColors.Blue))
         strip.setBrightness(brightness)
         strip.show()
-    } else if (pins.analogReadPin(AnalogPin.P2) < 805 && pins.analogReadPin(AnalogPin.P2) > 770) {
+    } else if (pins.analogReadPin(AnalogPin.P2) < 888 && pins.analogReadPin(AnalogPin.P2) > 876) {
         basic.showIcon(IconNames.Happy)
         strip.clear()
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
@@ -392,7 +392,7 @@ basic.forever(function () {
         strip.setPixelColor(22, neopixel.colors(NeoPixelColors.Blue))
         strip.setBrightness(brightness)
         strip.show()
-    } else if (pins.analogReadPin(AnalogPin.P2) < 900 && pins.analogReadPin(AnalogPin.P2) > 805) {
+    } else if (pins.analogReadPin(AnalogPin.P2) < 900 && pins.analogReadPin(AnalogPin.P2) > 888) {
         basic.showIcon(IconNames.Happy)
         strip.clear()
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
