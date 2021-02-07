@@ -1,10 +1,17 @@
 let strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
 let brightness = 25
 basic.forever(function () {
-    if (pins.analogReadPin(AnalogPin.P2) < 630) {
+    if (pins.analogReadPin(AnalogPin.P2) < 624) {
         basic.showIcon(IconNames.Skull)
         strip.clear()
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
+        strip.setBrightness(brightness)
+        strip.show()
+    } else if (pins.analogReadPin(AnalogPin.P2) < 636 && pins.analogReadPin(AnalogPin.P2) > 624) {
+        basic.showIcon(IconNames.Skull)
+        strip.clear()
+        strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
+        strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
         strip.setBrightness(brightness)
         strip.show()
     } else if (pins.analogReadPin(AnalogPin.P2) < 648 && pins.analogReadPin(AnalogPin.P2) > 636) {
@@ -12,6 +19,7 @@ basic.forever(function () {
         strip.clear()
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
         strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
+        strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
         strip.setBrightness(brightness)
         strip.show()
     } else if (pins.analogReadPin(AnalogPin.P2) < 660 && pins.analogReadPin(AnalogPin.P2) > 648) {
@@ -20,6 +28,7 @@ basic.forever(function () {
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
         strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
         strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
+        strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
         strip.setBrightness(brightness)
         strip.show()
     } else if (pins.analogReadPin(AnalogPin.P2) < 672 && pins.analogReadPin(AnalogPin.P2) > 660) {
@@ -29,19 +38,10 @@ basic.forever(function () {
         strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
         strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
         strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
-        strip.setBrightness(brightness)
-        strip.show()
-    } else if (pins.analogReadPin(AnalogPin.P2) < 684 && pins.analogReadPin(AnalogPin.P2) > 672) {
-        basic.showIcon(IconNames.Skull)
-        strip.clear()
-        strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
-        strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
-        strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
-        strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
         strip.setPixelColor(4, neopixel.colors(NeoPixelColors.Red))
         strip.setBrightness(brightness)
         strip.show()
-    } else if (pins.analogReadPin(AnalogPin.P2) < 696 && pins.analogReadPin(AnalogPin.P2) > 684) {
+    } else if (pins.analogReadPin(AnalogPin.P2) < 684 && pins.analogReadPin(AnalogPin.P2) > 672) {
         basic.showIcon(IconNames.Skull)
         strip.clear()
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
